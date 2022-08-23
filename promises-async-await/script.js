@@ -1,5 +1,5 @@
 'strict'
-/*
+/* 
 // let p = new Promise((resolve, reject) => {
 //     let a = 1 + 1
 //     if(a === 2 ) {
@@ -29,7 +29,7 @@ let promise = new Promise(function(resolve,reject){
 function func1(){
     return new Promise(function(resolve, reject){
         setTimeout(() => {
-            const error = false;
+            const error = true;
             if(!error){
                 console.log("Function: Your promise has been resolved")
                 resolve();
@@ -37,7 +37,7 @@ function func1(){
                 console.log('Function: Your promise has not been resolved.');
                 reject('Sorry not fulfilled');
             }
-        }, 3000);
+        }, 2000);
     })
 }
 
