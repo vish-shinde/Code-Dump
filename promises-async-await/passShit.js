@@ -1,43 +1,16 @@
-
-// const checkpwd = function(pass){
-//     return new Promise(function(resolve,reject) {
-//         setTimeout(() => {
-//             const defaultPwd = 'admin';
-//             defaultPwd == pass ? resolve() : reject();
-//         }, 2000);
-//         console.log("ehlo");
-
-//     });}
-//     // document.querySelector('.submit').addEventListener('click', checkpwd(),{
-//     //     checkpwd('admin').then(()=> {
-//     //             console.log("Paasword matched");
-//     //         }).catch(()=> {
-//     //             console.log("Denied");
-//     //         })
-//     // })
-
-   
-//     checkpwd('admin').then(()=> {
-//         console.log("Paasword matched");
-//     }).catch(()=> {
-//         console.log("Denied");
-//     })
-
-    const checkpwd = function(pass) {
+const checkpwd = function(pass) {
         return new Promise(function(resolve, reject) {
             setTimeout(() => {
                 const defaultPwd = 'admin';
                 defaultPwd == pass ? resolve() : reject();
-            }, 1000);
-            // console.log("Hello");
+            }, 3000);
         })   
     }
 document.getElementById('bang').addEventListener(('click'),function() {
+   console.log("pending");
     checkpwd('root').then(()=> {
-        console.log("Paasword matched");
+        console.log("Password matched");
     }).catch(()=> {
         console.log("Access Denied");
     })
 })
-
-
