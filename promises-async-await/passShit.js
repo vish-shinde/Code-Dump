@@ -15,6 +15,10 @@ const checkpwd = function(pass){
     //             console.log("Denied");
     //         })
     // })
+
+    document.getElementById('bang').addEventListener('click', e => {
+        console.log('first click');
+    })
     checkpwd('admin').then(()=> {
         console.log("Paasword matched");
     }).catch(()=> {
