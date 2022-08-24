@@ -24,3 +24,4 @@ let testResult = func2(70).then(() => {
     console.log('no');
 })
 console.log(testResult);
+
