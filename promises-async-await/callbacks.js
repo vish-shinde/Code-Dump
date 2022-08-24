@@ -18,7 +18,7 @@
 
 function getUsers(onSuccess){
     return new Promise((resolve,reject) => {
-        setTimeout(() => {
+        document.getElementById('bang').addEventListener('click', setTimeout(() => {
             if(onSuccess) {
                 resolve([
                     {id : 1, name: 'Jerry'},
@@ -30,7 +30,21 @@ function getUsers(onSuccess){
             }
           }, 2000)
         })
+      }) {
       }
+    //     setTimeout(() => {
+    //         if(onSuccess) {
+    //             resolve([
+    //                 {id : 1, name: 'Jerry'},
+    //                 {id : 2, name: 'Eleine'},
+    //                 {id : 3, name: 'Goerge'},
+    //             ])
+    //         } else {
+    //             reject('Failed to fetch data!')
+    //         }
+    //       }, 2000)
+    //     })
+    //   }
 
 getUsers(true).then((response) => {
     console.log(response)

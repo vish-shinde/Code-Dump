@@ -16,9 +16,7 @@ const checkpwd = function(pass){
     //         })
     // })
 
-    document.getElementById('bang').addEventListener('click', e => {
-        console.log('first click');
-    })
+   
     checkpwd('admin').then(()=> {
         console.log("Paasword matched");
     }).catch(()=> {
