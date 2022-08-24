@@ -46,3 +46,8 @@ func1().then(function(){
 }).catch(function(error){
     console.log('Harry: very Bad bro '+error);
 })
+
+
+document.querySelector('.submit').addEventListener('click', function(){
+    console.log("hello");
+})
