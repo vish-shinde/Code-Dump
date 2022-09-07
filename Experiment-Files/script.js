@@ -1,17 +1,7 @@
-
-// document.getElementBy
-// fetch('https://jsonplaceholder.typicode.com/posts').then((result) => {
-//     return result.json();
-// }
-// )
-// .then((record) => {
-//     console.log(record);
-// })
-
-
 document.getElementById('submit').addEventListener('click', test)
 function test() {
     // console.log("Pending...");
+    document.getElementById('pend').innerHTML = 'Pending...';
     setTimeout(() => {
         fetch('https://jsonplaceholder.typicode.com/posts').then((result) => {
                 return result.json();
