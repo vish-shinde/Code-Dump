@@ -33,12 +33,5 @@ fetch('test1.json').then(
 }).then((record)=> {
     console.log(record);
 })
-let stu = [10,23,44,56];
-for (let i= 0; i < stu.length; i++) {
-    const element = stu[i];
-    console.log(element);
-}
-// stu = number[Symbol.iterator]();
-console.log(stu.next().value);
 
     
