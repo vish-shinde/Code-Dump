@@ -1,11 +1,11 @@
 package main
 
-import "fmt"
+// import "fmt"
 
-func main() {
+func nums_1to10() int {
 	sum := 0
 	for i := 0; i < 10; i++ {
 		sum += 1
 	}
-	fmt.Println(sum)
+	return sum
 }
